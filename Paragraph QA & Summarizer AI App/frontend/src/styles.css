@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Universal */
+.bg-full {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-center {
+  width: 80px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Auth Card */
+.auth-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Sidebar and Card for Dashboard */
+.sidebar-glass {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.dashboard-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 25px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* History Scroll */
+.session-history {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Backgrounds per page */
+.dashboard-bg {
+  display: flex;
+  min-height: 100vh;
+  background: url("./assets/bg-dashboard.jpg") no-repeat center center/cover;
+}
+/* styles.css */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Zoom-in logo */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 1.2s ease-out forwards;
+}
+.card-glass a:hover {
+  text-decoration: underline;
+  color: #0056b3 !important;
+}
+
+.card-glass .border {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-glass .border:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+.background-container {
+  background-image: url('./assets/bg-default.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.feature-card,
+.summarizer-card {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+textarea.form-control {
+  resize: none;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.alert-info {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border-radius: 10px;
+  padding: 1rem;
+}
